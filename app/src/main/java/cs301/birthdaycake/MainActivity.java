@@ -16,9 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_main);
+
         CakeView cakeViewID = findViewById(R.id.cakeview);
         CakeController newCakeController = new CakeController(cakeViewID);
 
+        /*
         Button blowOut = findViewById(R.id.blowout);
         blowOut.setOnClickListener(newCakeController);
 
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         SeekBar candleAmount = findViewById(R.id.numbercandles);
         candleAmount.setOnSeekBarChangeListener(newCakeController);
-
+        */
     }
 
     public void goodbye(View button) {

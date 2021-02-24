@@ -1,10 +1,13 @@
 package cs301.birthdaycake;
 
 public class CakeController {
+    private CakeView cakeView;
+    private CakeModel cakeModel;
 
-   CakeController(){
-       private CakeView cakeview = cakeview;
+
+    public CakeController(CakeView cakeview) {
+       this.cakeView = cakeview;
+       cakeModel = cakeview.getCakeModel();
    }
-   private CakeModel cakemodel = getCakeModel();
 
 }
